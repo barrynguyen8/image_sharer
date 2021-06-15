@@ -9,12 +9,13 @@ class PicsController < ApplicationController
     end 
     
     def new #adds new images 
-        @pic = Pic.new #creates instance of Pic
+        # @pic = Pic.new #creates instance of Pic
+        @pic = current_user.pics.build
     end 
     
     def create #saving it to database (structure) ** responsible for database changes 
-        @pic = Pic.new(pic_params)
-        
+        # @pic = Pic.new(pic_params)
+        @pic = current_user.pics.build(pic_params)
         if @pic.save
             redirect_to @pic, notice: "Yes! It was posted!" #note that redirect is a page refresh unlike render 
         else
