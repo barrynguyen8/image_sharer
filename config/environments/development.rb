@@ -74,5 +74,5 @@ Rails.application.configure do
   config.hosts << "d683b5ae9a5e40ac9e6dcacc2c887d86.vfs.cloud9.ap-southeast-2.amazonaws.com"
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
-  
+  Paperclip.options[:command_path] = "/usr/bin/"
 end
