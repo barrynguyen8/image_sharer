@@ -31,6 +31,8 @@ gem 'simple_form', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.8'
 gem 'paperclip', '~> 6.1'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'coffee-rails', '~> 5.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

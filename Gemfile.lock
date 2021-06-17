@@ -83,6 +83,13 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     climate_control (0.2.0)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     devise (4.8.0)
@@ -112,6 +119,8 @@ GEM
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.1)
+    masonry-rails (0.2.4)
+      railties
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
@@ -245,10 +254,12 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4, >= 3.4.1)
   byebug
   capybara (>= 3.26)
+  coffee-rails (~> 5.0)
   devise (~> 4.8)
   haml (~> 5.2, >= 5.2.1)
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  masonry-rails (~> 0.2.4)
   paperclip (~> 6.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
