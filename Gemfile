@@ -33,6 +33,7 @@ gem 'devise', '~> 4.8'
 gem 'paperclip', '~> 6.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'coffee-rails', '~> 5.0'
+gem 'acts_as_votable', '~> 0.13.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

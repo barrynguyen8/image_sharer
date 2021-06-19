@@ -1,6 +1,8 @@
 class PicsController < ApplicationController
     
-    before_action :find_pic, only: [:show, :edit, :update, :destroy]
+    before_action :find_pic, only: [:show, :edit, :update, :destroy, :upvote]
+    before_action :authenticate_user!, except: [:index, :show] #restricts user behaviour - index and show are only two actuions that someone not logged in can do
+    
     def index
         @pics = Pic.all.order("created_at DESC") #decending order 
     end 
@@ -37,6 +39,11 @@ class PicsController < ApplicationController
     def destroy
         @pic.destroy
         redirect_to root_path
+    end 
+    
+    def upvote
+        @pic.upvote_by current_user 
+        redirect_back fallback_location: pics_path #to show page
     end 
     
     private #so it applies to other actions - DRY
