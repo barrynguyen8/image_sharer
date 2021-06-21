@@ -35,6 +35,10 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'coffee-rails', '~> 5.0'
 gem 'acts_as_votable', '~> 0.13.1'
 
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'activerecord-session_store'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
